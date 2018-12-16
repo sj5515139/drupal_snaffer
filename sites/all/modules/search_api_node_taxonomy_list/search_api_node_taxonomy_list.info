@@ -1,0 +1,11 @@
+core = 7.x
+name = Serach API Node Taxonomy List
+files[] = SearchApiNodeTaxonomyListSearchApiAlterCallback.inc
+file[] = SearchApiNodeTaxonomyListSearchApiAlterCallback.inc
+
+; Information added by drupal.org packaging script on 2013-10-01
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "search_api_node_taxonomy_list"
+datestamp = "1380626847"
+

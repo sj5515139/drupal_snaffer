@@ -1,0 +1,39 @@
+<?php
+
+/*
+ * Alter the listing form to enable Conditional Fields to work with Commerce Node Checkout
+ */
+/*function bizreview_hook_form_alter(&$form, &$form_state, $form_id) {
+  if($form_id == 'business_node_form') {
+  $module_path = drupal_get_path("module","bizreview");
+  $form['#attached']['js'] = array($module_path . '/bizreview.js');
+}
+}
+*/
+
+function bizreview_hook_form_alter(&$form, $form_state, $form_id) {
+
+  if($form_id == 'business_node_form'){
+var_dump($form);
+     $form['#after_build'][] = array('bizreview_after_build');
+   }
+}
+
+function bizreview_after_build($form, &$form_state) {
+  $path = drupal_get_path('module', 'bizreview');
+  drupal_add_js ("$path/bizreview.js");
+  return $form;
+}
+
+/*
+** Asking For login on adding a product for unlogged user...
+*/
+function bizreview_form_commerce_cart_add_to_cart_form_alter(&$form, &$form_state, $form_id) {
+  $form['#validate'][] = 'bizreview_commerce_cart_add_to_cart_form_validate';
+}
+function bizreview_commerce_cart_add_to_cart_form_validate($form, &$form_state) {
+  if ($form['uid']['#value'] == 0) { // Check for anonymous.
+    form_set_error('quantity', t("Please Login to go further. No Account? <a href=$base_url/user/register>Register</a> Here.")); // Message telling the user to login.
+    drupal_goto('user/login', array('query' => drupal_get_destination())); // Redirection to the login form with current path as destination.
+  }
+}

@@ -1,0 +1,18 @@
+<?php
+/**
+ * @file
+ * Installation file for miniOrange OTP Verification Module.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function miniorange_otp_uninstall() {
+  variable_del('miniorange_otp_status');
+  variable_del('miniorange_otp_customer_admin_email');
+  variable_del('miniorange_otp_customer_admin_phone');
+  variable_del('miniorange_otp_customer_otp_token');
+  variable_del('miniorange_otp_customer_id');
+  variable_del('miniorange_otp_customer_api_key');
+  variable_del('mo_customer_check_ln');
+}

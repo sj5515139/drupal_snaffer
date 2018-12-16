@@ -1,0 +1,356 @@
+#logo img{
+	/*height:60px;*/
+}
+@media (min-width: 992px){
+	#logo {
+		padding: 5px 0 10px;
+	}
+}
+
+/* Css For Main mEnu */
+#main-navigation .menu.nav{
+	padding:0;
+	height:5px;
+}
+
+@media (min-width: 1199px){
+	#main-navigation li a, #main-navigation li span.nolink {
+			padding: 15px 20px 16px;
+	}
+}
+
+/* Removing Reviews on Review Page */
+.page-reviews #main-content{
+	display:none;
+}
+.page-reviews #content-top-second{
+	background:#fff;
+}
+
+/* CSS For My Products Page.......*/
+.page-my-products .view-my-products {
+  background: #fff;
+  padding: 20px;
+}
+
+/* Placing user menu on right side*/
+.menu.nav{
+	/*float:right;*/
+}
+/* CSS Logo Dropdown*/
+#logo-dropdown{
+	float:left;
+	padding: 10px 20px 10px;
+	position:relative;
+}
+
+#logo-dropdown strong{
+	font-size:28px; list-style-type:none; cursor:pointer;
+}
+
+#logo-dropdown-menu{
+	display:none;
+	position:absolute;
+	float:left;
+	background:white;
+	color:black;
+	text-align:center;
+	min-width:150px;
+	box-shadow:0 1px 10px #ccc;
+}
+#dropdown-1,#dropdown-2{
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+#dropdown-1 li{
+	list-style-type:none;
+	padding:5px 20px;
+	border-bottom: 1px solid #EBEBEB;
+}
+#dropdown-2 li{
+	list-style-type:none;
+	padding:0;
+	float:left;
+	width:33.33%;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:22px;
+}
+#logo-dropdown-menu .left li{
+	padding:0;
+}
+
+#logo-dropdown:hover #logo-dropdown-menu{
+	display:block;
+}
+
+
+/* CSS For Subscription Blocks.......
+.page-user-register .block-paypal-roles{
+	display: inline-block;
+	padding: 20px;
+	background: white;
+	margin-right: 10%;
+}
+#block-block-34{
+	height:50px;
+}
+*/
+
+
+/* Css For Related products View */
+.store-products{
+	float:left;
+	padding:30px;
+	overflow:hidden;
+	box-shadow:0 1px 10px #ccc;
+}
+.pro-title{
+	font-size:25px;
+	text-align:center;
+	margin-bottom: 5px;
+}
+.pro-price span{
+	text-decoration:line-through;
+}
+.pro-img img{
+	width:100%;
+}
+
+.store-products:hover{
+	transform: scale(1.03)
+}
+
+#block-views-store-related-products-block{
+	background: white;
+    padding: 10px;
+}
+
+#block-views-store-related-products-block .view-content ul li{
+margin:5px;
+}
+    
+
+#header-top-left .block-menu ul.menu li a#item-menu-user-my-products:before{
+	content:"\f288";
+}
+#header-top-left .block-menu ul.menu li a#item-menu-user-my-cart:before{
+	content:"\f07a";
+}
+
+/* Reducing Size of Search Section */
+#block-views-exp-list-indexed-business-page, #block-views-exp-map-list-business-page-1 {
+ padding: 0;
+}
+
+#views-exposed-form-list-indexed-business-page .form-submit, #views-exposed-form-map-list-business-page-1 .form-submit {
+  padding: 10px;
+}
+#content-top-first-wrapper{
+	padding: 0px 0 40px;
+}
+
+/* #main-navigation li:hover, #main-navigation li.open, #main-navigation li.active-trail a, #main-navigation li.active-trail  span.nolink, #main-navigation li a.active, #main-navigation li a:hover, #main-navigation li a.current, #main-navigation li a.selected, #main-navigation li span.nolink:hover, #main-navigation li.active-trail span.nolink, #main-navigation li span.nolink.selected{ */
+	/* color:inherit; */
+	/* background:none; */
+	/* border-top:4px solid #00bff3; */
+/* } */
+
+/* Dropdown Issue on Slider */
+.contextual-links-region {
+  z-index: 1;
+}
+#dexp-layerslider{
+	position: relative;
+  z-index: 1;
+}
+
+/* Css For Header Section & Footer */
+#header-top, #footer{
+  /*background-color: #3e4095;*/
+}
+
+#header-top-left .block-menu ul.menu li a{
+	/*color:white;
+	border-left: 1px solid #3e4095;*/
+}
+#header-top-left .block-menu ul.menu li.last {
+    /*border-right: 1px solid #fff;*/
+}
+
+/* Reducing Padding on Front Page */
+.page-reviews #content-top-first-wrapper {
+  padding: 0;
+}
+
+@media (min-width: 1199px){
+	.page-reviews #content-top-second-wrapper	{
+		padding: 20px 0 40px;
+	}
+}
+
+/* Css For Footer App Links */
+.foo_app{
+	border: 1px solid rgba(242, 242, 242, 0.13);
+  border-radius: 5px;
+  background:#f3f3f3;
+}
+.secure_payment{
+	display: block;
+	padding-bottom: 10px;
+}
+
+.secure_payment_links{
+	margin-right: 15px;
+	margin-top: 15px;
+	float: left;
+}
+
+.secure_payment_links:before{
+	content:"\f132";
+	font-family:fontawesome;
+	font-size:2em;
+	color:black;
+}
+
+.secure_text{
+	font-size: .6875em;
+	font-weight: bold;
+	float: left;
+	color:black;
+	text-transform: uppercase;
+}
+
+.secure_payment_payumoney img{
+	opacity: .7;
+}
+.app-links{
+	max-width: 400px;
+	margin: 0;
+	text-align: center;
+	float:right;
+	margin-top:5%;
+}
+
+.app-links ul{
+	padding:0;
+}
+
+.app-links li:first-child {
+  padding-left: 0;
+}
+
+.app-links li {
+	width: 50%;
+	float: left;
+	padding: 0 20px;
+	list-style-type: none;
+}
+
+.app-links a {
+	float: right;
+	padding: 15px 40px;
+	display: inline-block;
+	width: 100%;
+	line-height: 0;
+	padding: 15px 20px;
+	border-radius: 3px;
+}
+
+.app-links a img {
+	max-width: 150px;
+	height: 50px;
+	display: inline-block;
+}
+
+#footer-inside .col-md-3{
+	font-size:12px;
+}
+
+#footer .block h2.block-title{
+	font-size:100%;
+}
+
+/* changing image size on store in views list */
+#block-views-list-business-block-3 .views-field-field-category-icon .field-content a img{
+width:56px;
+height:56px;
+}
+
+/* Chaning Background of vendor-contact form */
+#node-104{
+	background:#fff;
+	padding:10px 80px;
+}
+
+#node-104 .submitted{
+display:none;
+}
+
+#node-104 input.form-text, textarea.form-textarea, select{
+	background-color: #f3f3f3;
+	color: black;
+}
+
+/* CSS for Product Display Page */
+.node-product-display{
+	background:#fff;
+	padding:20px;
+}
+
+.node-product-display .field-field-product-image{
+	float:left;
+	margin-right:5%;
+}
+
+.node-product-display .field-name-field-mrp{
+	float:left;
+	margin-right:5px;
+}
+.node-product-display .field-name-field-mrp .field-items{
+	text-decoration:line-through;
+}
+.node-product-display .commerce-product-field-field-category{
+	float:left;
+	width:40%;
+}
+
+
+
+/* Css For Add to Fav Icon */
+.view-list-business .views-field-count{
+    position: absolute;
+    top: 0;
+    right: -5px;
+    background: white;
+    padding: 2px 4px;
+    z-index: 100;
+}
+
+.orange{
+    color:#ff9900;
+}
+
+.page-node-add-business #content-top-first-wrapper{
+	display:none;
+}
+.business-pricing-block .pricing-button{
+	display: inline-block;
+	padding: 5px 10px;
+	margin-right: 2%;
+	border: 1px solid;
+	font-size: 18px;
+}
+
+/* css for views filters */
+.views-exposed-form .form-type-select .form-control{
+	display: inline-block;
+	width: auto;
+	height: auto;
+}
+.views-exposed-form .form-type-select .form-control input[type="checkbox"]{
+	display: inline-block;
+	width: auto;
+	height: auto;
+}
